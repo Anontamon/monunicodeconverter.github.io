@@ -22,7 +22,7 @@
  body {
 		font-size: 16px;
 		background-color: #111111;
-		font-family: '"Myanmar Text",Tharlon';
+		font-family: 'Mon3 Anonta 2019';
 		text-align: left;
 		line-height: 1.5;
     color: #7ece7e;
@@ -65,7 +65,7 @@
     background-color: #111111;
     border: 1px solid #333333;
 		padding: 5px;
-		font-family: '"Myanmar Text",Tharlon';
+		font-family: 'Mon3 Anonta 2019';
 		font-size: 16px;
   }
   hr {
@@ -78,7 +78,7 @@ function u2m() {
     var u = document.getElementById("txtU");
     var m = document.getElementById("txtM");
     var b = document.getElementById("txtB");
-    //y.style.fontFamily='Zawgyi-One';
+    //y.style.fontFamily='Mon 2012 0';
     m.value = Uni_Mon(u.value);  
     b.value = "[Unicode] \n"+u.value+ "\n \n[Mon] \n"+m.value;
 }
@@ -86,7 +86,7 @@ function m2u() {
      var u = document.getElementById("txtU");
     var m = document.getElementById("txtM");
     var b = document.getElementById("txtB");
-    //y.style.fontFamily='Zawgyi-One';
+    //y.style.fontFamily='Mon 2012 0';
     u.value = Mon_Uni(m.value);  
     b.value = "[Mon] \n"+m.value+ "\n \n[Unicode] \n"+u.value;
 }
@@ -625,7 +625,7 @@ function Mon_Uni(input)
     </tr>
     <tr>
         <td>
-            <textarea id="txtU" style='font-family:"Myanmar Text","Mon3 Anonta 3019"; width:300px; height:500px;'></textarea>
+            <textarea id="txtU" style='font-family:"Mon3 Anonta 3019"; width:300px; height:500px;'></textarea>
         </td>
         <td>
            
@@ -633,7 +633,7 @@ function Mon_Uni(input)
         </td>
         <td>
            
-            <textarea id="txtB" style='font-family:"Myanmar Text","Mon3 Anonta 2019"; width:300px; height:500px;'></textarea>
+            <textarea id="txtB" style='font-family:"Mon3 Anonta 2019"; width:300px; height:500px;'></textarea>
         </td>
     </tr>
     </table>
