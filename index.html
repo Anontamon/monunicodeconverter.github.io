@@ -438,7 +438,7 @@ function Mon_Uni(input)
    // ya
    ////////////////////// Reordering
    
-   
+   output = output.replace ( /\u103E\u1031\u103A/g, "\u103E\u103A\u1031");
    output = output.replace ( /(\u1031)?(\u103C)?([\u1000-\u1021])\u1064/g, "\u1064$1$2$3");
    // reordering kinzi
    output = output.replace ( /(\u1031)?(\u103C)?([\u1000-\u1021])\u108B/g, "\u1064$1$2$3\u102D");
@@ -563,7 +563,7 @@ function Mon_Uni(input)
     output = output.replace ( /\u1031(\u1039[\u1000-\u1021\u105A\u105C])/g, "$1\u1031");
     output = output.replace ( /([\u1000-\u1021\u105A\u105C])(\u103C)(\u105A\u103A\u1039)/g, "$3$1$2");
     output = output.replace ( /\u1031([u105B\u105D])/g, "$1\u1031");
-    output = output.replace ( /\u103E\u1031\u103A/g, "\u103E\u103A\u1031");
+    
     //// Double error2one
     output = output.replace  ( /\u102B\u102B/g, "\u102B");
     output = output.replace  ( /\u102C\u102C/g, "\u102C");
